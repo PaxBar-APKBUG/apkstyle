@@ -1213,3 +1213,27 @@ button:active {
 .hidden {
   display: none !important;
 }
+/* LOGO HEADER SPIN */
+.logo-spin {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+
+  animation: spinLogo 6s linear infinite;
+
+  box-shadow:
+    0 0 12px rgba(255, 0, 0, 0.6),
+    0 0 24px rgba(255, 0, 0, 0.3);
+}
+
+/* Animasi muter */
+@keyframes spinLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
