@@ -1077,3 +1077,51 @@ main[id^="view-"].visible {
 
 #view-bug { display:flex; justify-content:center; }
 #view-bug .card { max-width:760px; width:100%; margin:22px auto; }
+
+/* ===== RED ACCESS CONTROL THEME ===== */
+
+/* LOGIN CARD */
+.login-card {
+  background: rgba(15, 5, 5, 0.9);
+  border: 1px solid rgba(255, 60, 60, 0.25);
+  box-shadow: 0 0 80px rgba(255, 60, 60, 0.15);
+}
+
+/* TITLE */
+.login-card .title {
+  color: #ff4d4d;
+  text-shadow: 0 0 12px rgba(255, 60, 60, 0.4);
+}
+
+.login-card .subtitle {
+  color: rgba(255,255,255,0.6);
+}
+
+/* INPUT */
+.login-card .input {
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.login-card .input:focus {
+  border-color: #ff3c3c;
+  box-shadow: 0 0 0 2px rgba(255, 60, 60, 0.25);
+}
+
+/* BUTTON LOGIN */
+.login-card .btn {
+  background: linear-gradient(135deg, #ff3c3c, #b80000);
+  box-shadow: 0 0 28px rgba(255, 60, 60, 0.6);
+}
+
+.login-card .btn:hover {
+  box-shadow: 0 0 45px rgba(255, 60, 60, 0.85);
+}
+
+/* BUY ACCESS */
+.buy-access {
+  color: #ff3c3c;
+}
+
+.buy-access:hover {
+  text-shadow: 0 0 14px rgba(255, 60, 60, 0.9);
+}
