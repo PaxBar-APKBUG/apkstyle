@@ -1207,3 +1207,43 @@ main[id^="view-"].visible {
   50% { box-shadow: 0 0 70px rgba(255,0,0,.35); }
   100% { box-shadow: 0 0 35px rgba(255,0,0,.15); }
 }
+/* CONTACT ADMIN BUTTON */
+.btn-contact {
+  width: 100%;
+  margin-top: 14px;
+  background: linear-gradient(135deg, #ff1e1e, #8b0000);
+  color: #fff;
+  border-radius: 14px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  box-shadow: 0 0 25px rgba(255,0,0,.35);
+  transition: all .35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-contact::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,.25),
+    transparent
+  );
+  transform: translateX(-100%);
+}
+
+.btn-contact:hover::after {
+  transform: translateX(100%);
+  transition: .8s;
+}
+
+.btn-contact:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 0 45px rgba(255,0,0,.6);
+}
+button:active {
+  transform: scale(.96);
+}
