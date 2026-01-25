@@ -1352,3 +1352,573 @@ button:active {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* ===== Manage Account Modern Styles ===== */
+#view-accounts section.card {
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255, 0, 0, 0.05); /* soft merah */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#view-accounts section.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* Row input modern */
+#view-accounts .row input.input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,0,0,0.3);
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+#view-accounts .row input.input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 6px rgba(255,0,0,0.4);
+}
+
+/* Tombol Buat Akun Center & Modern */
+#btnCreate {
+  display: block;
+  margin: 20px auto 0;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: var(--primary); /* warna merah login */
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+#btnCreate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255,0,0,0.35);
+}
+
+/* Table Akun modern */
+#accountsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14px;
+}
+
+#accountsTable th, #accountsTable td {
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,0,0,0.2);
+}
+
+#accountsTable th {
+  background: rgba(255,0,0,0.08);
+  font-weight: 600;
+}
+
+#accountsTable td button {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#accountsTable td button.edit {
+  background: #f5a623;
+  color: #fff;
+}
+
+#accountsTable td button.delete {
+  background: #d0021b;
+  color: #fff;
+}
+
+#accountsTable td button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Dropdown Role Modern */
+.dropdown-glass {
+  position: relative;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+#roleBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255,0,0,0.1);
+  border: 1px solid rgba(255,0,0,0.3);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#roleBtn:hover {
+  background: rgba(255,0,0,0.2);
+}
+
+#roleList {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  z-index: 10;
+  padding: 6px 0;
+}
+
+#roleList li {
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#roleList li:hover {
+  background: rgba(255,0,0,0.1);
+}
+/* ==== Manage Account Modern Style ==== */
+.account-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Add Account */
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.account-form .modern-input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.account-form .modern-input:focus {
+  border-color: #ff4c4c;
+  box-shadow: 0 0 8px rgba(255,76,76,0.35);
+}
+
+/* Dropdown Role */
+.dropdown-glass {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-glass .modern-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown-glass .modern-btn:hover {
+  background-color: #ff4c4c;
+  transform: scale(1.02);
+}
+
+.dropdown-glass ul {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  z-index: 999;
+}
+
+.dropdown-glass ul li {
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.dropdown-glass ul li:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* Tombol Tambah Akun */
+.add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto; /* CENTER */
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #ff4c4c;
+  transform: scale(1.03);
+}
+
+/* Table Accounts */
+.account-table-wrapper {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.account-table th,
+.account-table td {
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.account-table th {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* ==== Bottom Menu Modern Style ==== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  background: rgba(26,26,26,0.95);
+  z-index: 999;
+}
+
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+.bottom-nav a:hover {
+  background-color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* ==== Responsive & Animations ==== */
+.card.reveal {
+  animation: fadeUp 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ==== Global Variables ==== */
+:root {
+  --primary: #ff4c4c;
+  --muted: #aaa;
+  --bg: #1a1a1a;
+  --glass-bg: rgba(26,26,26,0.85);
+}
+
+/* ==== General Styles ==== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+input, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ==== Card Reveal Animation ==== */
+.card.reveal {
+  animation: fadeUp 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== Manage Account Modern Style ==== */
+.account-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Add Account */
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.account-form .modern-input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.account-form .modern-input:focus {
+  border-color: #ff4c4c;
+  box-shadow: 0 0 8px rgba(255,76,76,0.35);
+}
+
+/* Dropdown Role */
+.dropdown-glass {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-glass .modern-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown-glass .modern-btn:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.02);
+}
+
+.dropdown-glass ul {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background-color: var(--bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  z-index: 999;
+}
+
+.dropdown-glass ul li {
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.dropdown-glass ul li:hover {
+  background-color: var(--primary);
+  color: #fff;
+  transform: scale(1.02);
+}
+
+/* Tombol Tambah Akun */
+.add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto; /* CENTER */
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.03);
+}
+
+/* Table Accounts */
+.account-table-wrapper {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.account-table th,
+.account-table td {
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.account-table th {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* ==== Bottom Menu Modern Style ==== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  background: rgba(26,26,26,0.95);
+  z-index: 999;
+}
+
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+.bottom-nav a:hover {
+  background-color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* ==== Tools Button ==== */
+.tools-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  gap: 6px;
+  transition: all 0.3s ease;
+  margin: 12px auto;
+  max-width: 200px;
+}
+
+.tools-btn:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.05);
+}
+
+/* Tools Dropdown */
+.tools-dropdown {
+  display: none;
+  flex-direction: column;
+  background: var(--glass-bg);
+  padding: 10px;
+  border-radius: 12px;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.tools-dropdown a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.tools-dropdown a:hover {
+  background-color: var(--primary);
+  transform: scale(1.02);
+}
+
+/* ==== Responsive ==== */
+@media(max-width:768px){
+  .account-form, .account-table-wrapper {
+    width: 100%;
+  }
+}
