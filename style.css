@@ -1237,3 +1237,118 @@ button:active {
     transform: rotate(360deg);
   }
 }
+/* --- Manage Account Modern --- */
+.account-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 2px solid #ff3b3b;
+  border-radius: 16px;
+  background: rgba(255, 59, 59, 0.05);
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.account-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.modern-input {
+  flex: 1 1 150px;
+  padding: 10px 14px;
+  border: 1px solid #ff3b3b;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.modern-input:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 10px rgba(255, 59, 59, 0.5);
+}
+
+.modern-btn {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  background: #ff3b3b;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modern-btn:hover {
+  background: #ff0000;
+  transform: scale(1.05);
+}
+
+.add-btn {
+  flex: 1 1 100%;
+}
+
+.dropdown-glass {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-glass ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 59, 59, 0.1);
+  border: 1px solid #ff3b3b;
+  border-radius: 12px;
+  list-style: none;
+  padding: 6px 0;
+  margin: 6px 0 0 0;
+  display: none;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+}
+
+.dropdown-glass ul li {
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropdown-glass ul li:hover {
+  background: rgba(255, 59, 59, 0.2);
+}
+
+.account-table-wrapper {
+  overflow-x: auto;
+}
+
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 400px;
+}
+
+.account-table th, .account-table td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid #ff3b3b;
+}
+
+.account-table th {
+  background: rgba(255, 59, 59, 0.2);
+  color: #ff0000;
+}
+
+.msg-space {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #ff3b3b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
