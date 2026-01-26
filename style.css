@@ -1955,3 +1955,60 @@ input, button {
   filter: grayscale(1);
 }
 
+/* === CSS SELECTED BUG === */
+.bug-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.bug-card {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #0b1220, #0f1a2f);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  cursor: pointer;
+  transition: all .25s ease;
+  position: relative;
+}
+
+.bug-card i {
+  font-size: 22px;
+  color: #5ddcff;
+}
+
+.bug-card h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #fff;
+}
+
+.bug-card p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #9aa4b2;
+}
+
+/* hover */
+.bug-card:hover {
+  transform: translateY(-2px);
+  border-color: #5ddcff;
+  box-shadow: 0 0 12px rgba(93, 220, 255, 0.35);
+}
+
+/* aktif */
+.bug-card.active {
+  border-color: #00ffe1;
+  box-shadow: 0 0 18px rgba(0, 255, 225, 0.6);
+}
+
+.bug-card.active::after {
+  content: "✓";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 14px;
+  color: #00ffe1;
+}
