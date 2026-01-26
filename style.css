@@ -2012,3 +2012,28 @@ input, button {
   font-size: 14px;
   color: #00ffe1;
 }
+
+
+/* === CSS SELECTED BUG 2 === */
+.bug-menu {
+  overflow: hidden;
+  transition: all .35s ease;
+}
+
+.bug-menu.hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+.bug-menu.show {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.arrow {
+  transition: transform .3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
