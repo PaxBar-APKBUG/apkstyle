@@ -2187,3 +2187,196 @@ input, button {
   background: #4da3ff;
   color: #fff;
 }
+
+/* ===== MANAGE ACCOUNT MODERN ===== */
+.account-section {
+  background: linear-gradient(145deg, #0e0e12, #14141b);
+  border-radius: 20px;
+  padding: 20px;
+  animation: fadeUp .5s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.account-form {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.modern-input {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  padding: 14px;
+  color: #fff;
+}
+
+.modern-input:focus {
+  outline: none;
+  border-color: #ff4d4d;
+  box-shadow: 0 0 0 2px rgba(255,77,77,.2);
+}
+
+.dropdown-glass {
+  position: relative;
+}
+
+#roleList {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: rgba(20,20,30,.95);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  overflow: hidden;
+  z-index: 99;
+}
+
+#roleList li {
+  padding: 12px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#roleList li:hover {
+  background: rgba(255,77,77,.2);
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #ff3d3d, #ff6a6a);
+  border-radius: 16px;
+  padding: 14px;
+  font-weight: bold;
+}
+
+.account-table-wrapper {
+  background: rgba(255,255,255,.03);
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.account-table th {
+  color: #ff6a6a;
+  font-size: 13px;
+}
+
+.account-table td {
+  padding: 10px;
+  font-size: 14px;
+}
+.account-form {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.05),
+    rgba(0,0,0,0.35)
+  );
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.05),
+              0 10px 30px rgba(0,0,0,0.6);
+  animation: fadeUp .5s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.modern-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  font-size: 14px;
+  transition: .3s;
+}
+
+.modern-input:focus {
+  border-color: #ff4d4d;
+  box-shadow: 0 0 0 2px rgba(255,77,77,.25);
+}
+.dropdown-glass {
+  position: relative;
+}
+
+#roleBtn {
+  width: 100%;
+  justify-content: space-between;
+}
+
+#roleList {
+  position: absolute;
+  inset: auto 0 0 0;
+  transform: translateY(8px);
+  background: rgba(0,0,0,0.85);
+  border-radius: 14px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  animation: drop .25s ease;
+}
+
+#roleList li {
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#roleList li:hover {
+  background: rgba(255,77,77,.15);
+}
+
+@keyframes drop {
+  from { opacity: 0; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(8px); }
+}
+.add-btn {
+  margin-top: 6px;
+  padding: 14px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ff3b3b, #ff6b6b);
+  font-weight: 600;
+  transition: .3s;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255,59,59,.4);
+}
+.account-table-wrapper {
+  margin-top: 24px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(0,0,0,0.4);
+}
+
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.account-table th,
+.account-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.account-table tbody tr {
+  transition: .25s;
+}
+
+.account-table tbody tr:hover {
+  background: rgba(255,255,255,0.04);
+}
